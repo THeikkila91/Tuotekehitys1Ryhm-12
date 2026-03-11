@@ -11,8 +11,16 @@ header {
     display: flex;
     align-items: center;
     padding: 0 40px;
-    border-bottom: 1px solid #eeeeee;
-    overflow: hidden;
+    justify-content: space-between; /* Jakaa tilan tasaisesti logon ja navigaation välillä */
+    padding: 0 10%; /* Lisää tilaa reunoille */
+
+    .header-buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px; /* Lisää tilaa painikkeiden väliin */
+    }
+
+
 }
 
 .logo {
@@ -41,7 +49,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
     transition: color 0.3s;
