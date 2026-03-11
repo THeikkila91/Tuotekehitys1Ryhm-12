@@ -54,6 +54,58 @@ header {
 
 }
 
+.palvelukortit {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+    background-color: #fcfcfc;
+}
+
+.Kuntokeskukset, 
+.Ryhmäliikunta, 
+.Personal-Trainer, 
+.Palautuminen {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease;
+}
+
+.Kuntokeskukset:hover, 
+.Ryhmäliikunta:hover, 
+.Personal-Trainer:hover, 
+.Palautuminen:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.kuntosali-img {
+    height: 40px;
+    width: auto;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.palvelukortit h2 {
+    margin: 10px 0;
+    font-size: 28px;
+    font-weight: 800;
+    color: #05162a;
+}
+
+.palvelukortit p {
+    margin: 0;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
 .logo {
     margin-right: 0; /* Puskee navigaation oikealle logosta */
     display: flex;
