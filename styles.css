@@ -1,8 +1,9 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica', Arial, sans-serif;
     background-color: #fcfcfc;
+    overflow-x: hidden; /* Estää vaakasuuntaisen skrollauksen */
 }
 
 header {
@@ -152,18 +153,40 @@ footer {
     margin-top: 50px;
 }
 
-.hero-text {
-    text-align: center;
-    color: #000000;
-    margin-top: 20px;
-}
 .hero-section {
     position: relative;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-.käsipainot-img {
-    width: 100%;
+    width: 100vw;       /* Pakottaa leveyden tasan näytön kokoiseksi */
     height: 500px;
-    display: block;
+    left: 50%;          /* Siirretään keskelle... */
+    right: 50%;
+    margin-left: -50vw; /* ...ja vedetään takaisin vasemmalle puolet näytöstä */
+    margin-right: -50vw;
+    overflow: hidden;   /* Leikkaa yli menevät osat */
 }
+
+.hero-img {
+    width: 100%;        /* Nyt 100% tarkoittaa 100% tuosta 100vw laatikosta */
+    height: 100%;
+    object-fit: cover;  /* Pitää huolen, ettei kuva veny hassusti */
+    display: block;
+    filter: brightness(60%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 20%;           /* Laitetaan teksti pystysuunnassa keskelle */
+    left: 50%;          /* Ja vaakasuunnassa keskelle */
+    transform: translate(-50%, -50%); /* Siirtää tismalleen keskipisteeseen */
+    text-align: center;
+    color: white;       /* Valkoinen teksti erottuu paremmin */
+    width: 90%;         /* Jätetään vähän marginaalia sivuille */
+}
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* Auttaa tekstin näkymistä */
+}
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    }
