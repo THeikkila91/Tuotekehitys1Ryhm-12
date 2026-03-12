@@ -142,7 +142,9 @@ nav a:hover {
     color: #000000;
 }
 
+
 footer {
+    display: flex;
     height: 500px;
     background-color: #111111;
     color: #ffffff;
@@ -150,6 +152,16 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+.Footer-laatikot {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.logofooter-img {
+    height: 150px;       /* Keeps the logo from looking stretched */
+    display: block;     /* Makes it easier to move around */
 }
 
 .hero-text {
@@ -166,4 +178,38 @@ footer {
     width: 100%;
     height: 500px;
     display: block;
+}
+.Somet {
+  list-style: none;
+  padding: 0;
+}
+
+.Somet li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.mini-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.Somet a {
+  text-decoration: none;
+  color: white;
+}
+.Footer-Navigaatio ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.Footer-Navigaatio li a {
+    text-decoration: none;
+    color: white;
+}
+.Footer-Navigaatio li a:hover {
+    color: #000000;
 }
