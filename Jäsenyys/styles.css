@@ -168,7 +168,7 @@ footer {
 .hero-section {
     position: relative;
     width: 100vw;
-    height: 500px;
+    height: 300px;
     left: 50%;          /*Siirretään keskelle...*/
     right: 50%;
     margin-left: -50vw; /* ...ja vedetään takaisin vasemmalle puolet näytöstä */
@@ -178,7 +178,7 @@ footer {
 
 .hero-img {
     width: 100%;        /* Nyt 100% tarkoittaa 100% tuosta 100vw laatikosta */
-    height: 100%;
+    height: 300px;
     object-fit: cover;  /* Pitää huolen, ettei kuva veny hassusti */
     display: block;
     filter: brightness(60%);
@@ -186,7 +186,7 @@ footer {
 
 .hero-text {
     position: absolute;
-    top: 20%;           /* Laitetaan teksti pystysuunnassa keskelle */
+    top: 30%;           /* Laitetaan teksti pystysuunnassa keskelle */
     left: 50%;          /* Ja vaakasuunnassa keskelle */
     transform: translate(-50%, -50%); /* Siirtää tismalleen keskipisteeseen */
     text-align: center;
@@ -307,25 +307,23 @@ display: flex !important;
   max-width: 1100px;
   margin: 80px auto;
   overflow: hidden;
-  border: 1px solid #ddd; /* Lisäsin pienen reunuksen, jotta näet kortin rajat */
+  border: 1px solid #ddd;
 }
 
 /* Tekstiosio */
 .sidebyside_card {
   flex: 1; 
-  padding: 40px; /* 60px voi olla liikaa, jos max-width on pieni */
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Kuvaosio */
 .card_image {
   flex: 1;
   min-height: 300px;
 }
 
-/* TÄRKEÄÄ: Säännöt itse kuvalle, ei diville */
 .card_image img{
   width: 100%;
   height: 100%;
@@ -333,7 +331,6 @@ display: flex !important;
   display: block;
 }
 
-/* Otsikon korjaus (HTML:ssä käytit h3, CSS:ssä luki h2) */
 .card_content h3 {
   font-family: 'Helvetica', Arial, sans-serif;
   color: #001a2c;
@@ -355,11 +352,11 @@ display: flex !important;
 }
 
 .jasenyys_nappi {
-    display: flex;            /* Enables flexbox */
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;      /* Centers vertically (if the container has height) */
-    width: 100%;              /* Ensures it spans the full width of the page */
-    margin-top: 20px;         /* Optional: adds space above the button */
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .jasenyysosto {
