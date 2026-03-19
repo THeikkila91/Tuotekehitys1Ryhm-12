@@ -21,7 +21,7 @@ header {
         gap: 20px; /* Lisää tilaa painikkeiden väliin */
     }
 
-    .header-actions {
+.header-actions {
   display: flex;
   gap: 10px;
 }
@@ -194,12 +194,12 @@ footer {
     width: 90%;         /* Jätetään vähän marginaalia sivuille */
 }
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin: 0;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* Auttaa tekstin näkymistä */
 }
 .hero-text p {
-    font-size: 18px;
+    font-size: 1.5rem;
     margin-bottom: 30px;
     }
 
@@ -285,7 +285,7 @@ display: flex !important;
 .promo-container-wrapper {
     max-width: 1100px; /* Säädä tämä samaksi kuin korttien yhteisleveys */
     margin: 0 auto;    /* Keskittää koko paketin sivulla */
-    padding: 0 20px;   /* Estää tekstiä osumasta näytön reunaan mobiilissa */
+    padding: 0 10px;   /* Estää tekstiä osumasta näytön reunaan mobiilissa */
 }
 
 
@@ -296,5 +296,95 @@ display: flex !important;
 .promo-section {
     background-color: #fcfcfc;
     padding: 20px 0 60px 0;
-    margin-top: -20px;
+    margin-top:-20px;
+    margin-bottom:-50px;
+}
+.sidebyside_promo {
+  display: flex;
+  border-radius: 15px;
+  align-items: stretch; 
+  background-color: #ffffff;
+  max-width: 1100px;
+  margin: 80px auto;
+  overflow: hidden;
+  border: 1px solid #ddd; /* Lisäsin pienen reunuksen, jotta näet kortin rajat */
+}
+
+/* Tekstiosio */
+.sidebyside_card {
+  flex: 1; 
+  padding: 40px; /* 60px voi olla liikaa, jos max-width on pieni */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Kuvaosio */
+.card_image {
+  flex: 1;
+  min-height: 300px;
+}
+
+/* TÄRKEÄÄ: Säännöt itse kuvalle, ei diville */
+.card_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+/* Otsikon korjaus (HTML:ssä käytit h3, CSS:ssä luki h2) */
+.card_content h3 {
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: #001a2c;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+.card_content p {
+  line-height: 1.6;
+  color: #333;
+}
+.sidebyside_promo.reverse {
+  flex-direction: row-reverse;
+  border-radius: 15px
+}
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.jasenyys_nappi {
+    display: flex;            /* Enables flexbox */
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically (if the container has height) */
+    width: 100%;              /* Ensures it spans the full width of the page */
+    margin-top: 20px;         /* Optional: adds space above the button */
+}
+
+.jasenyysosto {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.jasenyysosto-primary {
+  background-color: #e65127;
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.jasenyysosto-outline {
+  border: 1px solid white;
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.jasenyysosto:hover {
+  opacity: 0.8;
 }
