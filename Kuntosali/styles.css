@@ -298,3 +298,116 @@ display: flex !important;
     padding: 20px 0 60px 0;
     margin-top: -20px;
 }
+
+.kaupungit {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.kaupunki-laatikko {
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.kaupunki-laatikko:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-color: #0077cc;
+}
+
+
+.kaupunki-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.kaupunki-nimi {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+
+.kaupunki-teksti {
+    padding: 0 10px 15px 10px;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .kaupungit {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.intro {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.varustelu {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.varustelu h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.varustelu p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.miksi {
+    max-width: 800px;
+    margin: 40px auto 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.miksi h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.miksi p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.varustelu, .miksi, .intro {
+    border: 2px solid black;   
+    border-radius: 10px;     
+    padding: 20px;            
+}
