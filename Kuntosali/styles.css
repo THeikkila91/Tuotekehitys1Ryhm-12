@@ -352,11 +352,14 @@ display: flex !important;
     }
 }
 
-.intro {
+.intro, .varustelu, .miksi {
     max-width: 800px;
-    margin: 60px auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 20px 20px 0 20px;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .intro h1 {
@@ -364,50 +367,24 @@ display: flex !important;
     margin-bottom: 20px;
 }
 
-.intro p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #444;
-}
-
-.varustelu {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.varustelu h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.varustelu p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #444;
-}
-
-.miksi {
-    max-width: 800px;
-    margin: 40px auto 60px auto;
-    padding: 20px;
-    text-align: center;
-}
-
+.varustelu h2,
 .miksi h2 {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
+.intro p,
+.varustelu p,
 .miksi p {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #444;
 }
 
-.varustelu, .miksi, .intro {
-    border: 2px solid black;   
-    border-radius: 10px;     
-    padding: 20px;            
+.section-img {
+    width: calc(100% + 40px);
+    height: 300px;
+    object-fit: cover;
+    margin: 20px 0 0 -20px;
+    display: block;
 }
