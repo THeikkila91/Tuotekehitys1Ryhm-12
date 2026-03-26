@@ -304,5 +304,6 @@ display: flex !important;
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin: -250px auto 60px auto;
-  max-width: 1100px;
+  margin: 100px auto 60px auto;
+  max-width: 1100; 
+}
