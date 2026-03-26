@@ -203,6 +203,7 @@ footer {
     margin-bottom: 30px;
     }
 
+
 .Somet {
   list-style: none;
   padding: 0;
@@ -297,4 +298,12 @@ display: flex !important;
     background-color: #fcfcfc;
     padding: 20px 0 60px 0;
     margin-top: -20px;
+}
+/* Kartta ja yhteystiedot hero-kuvan alapuolella */
+.hero-contact-map {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 100px auto 60px auto;
+  max-width: 1100; 
 }
