@@ -1,3 +1,13 @@
+:root {
+    --brand-cyan: #00a6c7;
+    --brand-orange: #e65127;
+    --dark-navy: #05162a;
+    --light-bg: #fcfcfc;
+    --text-gray: #444444;
+    --footer-black: #111111;
+    --main-font: 'Helvetica', Arial, sans-serif;
+}
+
 /* --- YLEISET TYYLIT --- */
 html, body {
     margin: 0;
@@ -10,7 +20,7 @@ html, body {
 
 header {
     height: 80px;
-    background-color: #00a6c7;
+    background-color: var(--brand-cyan);
     display: flex;
     align-items: center;
     padding: 0 40px;
@@ -80,7 +90,7 @@ nav a:hover, nav a.active {
 }
 
 .btn-primary {
-    background-color: #e65127;
+    background-color: var(--brand-orange);
     color: white;
     font-style: italic;
     text-transform: uppercase;
@@ -173,7 +183,7 @@ nav a:hover, nav a.active {
     font-size: 26px;
     font-weight: 800;
     margin-bottom: 25px;
-    color: #05162a;
+    color: var(--dark-navy);
 }
 
 .promo-container {
@@ -231,7 +241,7 @@ nav a:hover, nav a.active {
 
 .recovery-list li::before {
     content: "✓";
-    color: #00a6c7;
+    color: var(--brand-cyan);
     font-weight: bold;
 }
 
@@ -262,7 +272,7 @@ nav a:hover, nav a.active {
 }
 
 .article-content h2 {
-    color: #05162a;
+    color: var(--dark-navy);
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 30px;
