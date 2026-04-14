@@ -1,3 +1,13 @@
+:root {
+    --brand-cyan: #00a6c7;
+    --brand-orange: #e65127;
+    --dark-navy: #05162a;
+    --light-bg: #fcfcfc;
+    --text-gray: #444444;
+    --footer-black: #111111;
+    --main-font: 'Helvetica', Arial, sans-serif;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -8,7 +18,7 @@ html, body {
 
 header {
     height: 80px;
-    background-color: #00a6c7;
+    background-color: var(--brand-cyan);
     display: flex;
     align-items: center;
     padding: 0 40px;
@@ -36,7 +46,7 @@ header {
 }
 
 .btn-primary {
-  background-color: #e65127; /* Korjattu kommenttimerkki tästä */
+  background-color: var(--brand-orange); /* Korjattu kommenttimerkki tästä */
   color: white;
   font-style: italic;
   text-transform: uppercase;
@@ -96,7 +106,7 @@ header {
     margin: 10px 0;
     font-size: 28px;
     font-weight: 800;
-    color: #05162a;
+    color: var(--dark-navy);
 }
 
 .palvelukortit p {
@@ -244,7 +254,7 @@ footer {
     font-size: 26px;
     font-weight: 800;
     margin-bottom: 25px;    /* Väli otsikon ja korttien välissä */
-    color: #05162a;
+    color: var(--dark-navy);
 }
 /* Tämä pakottaa laatikot riviin */
 .promo-container {
@@ -299,11 +309,95 @@ display: flex !important;
     padding: 20px 0 60px 0;
     margin-top: -20px;
 }
-/* Kartta ja yhteystiedot hero-kuvan alapuolella */
+
+.contact-info {
+    position: static;
+    margin-top: 20px; /* ✅ */
+    text-align: center;
+     border: 2px solid black;   /* musta raja */
+    border-radius: 12px;        /* kulmien pyöristys */
+    padding: 20px;              /* sisätila */
+}
+
+/* ========== CONTAINER ========== */
+.contact-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* ========== KARTTA ========== */
 .hero-contact-map {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin: 100px auto 60px auto;
-  max-width: 1100px; 
+    flex: 2;
+    min-width: 0;
+}
+
+/* kartan iframe */
+.map-container {
+    width: 100%;
+}
+
+.map-container iframe {
+    width: 80%;
+    height: 450px;
+    border: 0;
+    display: block;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+/* ========== LOMAKE ========== */
+.contact-form {
+    flex: 1;
+    max-width: 350px;
+    min-width: 250px;
+
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 15px;
+
+    position: static;
+    margin-top: 40px;
+}
+
+.contact-wrapper {
+    justify-content: flex-start; /* tärkeä */
+}
+
+.contact-form {
+    transform: translateX(-70px); /* siirtää vasemmalle oikeasti */
+}
+
+
+/* inputit */
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* viestikenttä */
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* nappi */
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* hover efekti */
+.contact-form button:hover {
+    background: #333;
 }

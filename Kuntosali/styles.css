@@ -1,14 +1,24 @@
+:root {
+    --brand-cyan: #00a6c7;
+    --brand-orange: #e65127;
+    --dark-navy: #05162a;
+    --light-bg: #fcfcfc;
+    --text-gray: #444444;
+    --footer-black: #111111;
+    --main-font: 'Helvetica', Arial, sans-serif;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica', Arial, sans-serif;
-    background-color: #fcfcfc;
+    font-family: var(--main-font);
+    background-color: var(--light-bg);
     overflow-x: hidden; /* Estää vaakasuuntaisen skrollauksen */
 }
 
 header {
     height: 80px;
-    background-color: #00a6c7;
+    background-color: var(--brand-cyan);
     display: flex;
     align-items: center;
     padding: 0 40px;
@@ -36,7 +46,7 @@ header {
 }
 
 .btn-primary {
-  background-color: #e65127; /* Korjattu kommenttimerkki tästä */
+  background-color: var(--brand-orange); /* Korjattu kommenttimerkki tästä */
   color: white;
   font-style: italic;
   text-transform: uppercase;
@@ -96,12 +106,12 @@ header {
     margin: 10px 0;
     font-size: 28px;
     font-weight: 800;
-    color: #05162a;
+    color: var(--dark-navy);
 }
 
 .palvelukortit p {
     margin: 0;
-    color: #444;
+    color: var(--text-gray);
     font-size: 14px;
     line-height: 1.4;
 }
@@ -310,7 +320,7 @@ display: flex !important;
 .kaupunki-laatikko {
     width: 300px;
     background-color: #f9f9f9;
-    border: 2px solid #333;
+    border: 1px solid #333;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
@@ -357,7 +367,7 @@ display: flex !important;
     margin: 40px auto;
     padding: 20px 20px 0 20px;
     text-align: center;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
 }
