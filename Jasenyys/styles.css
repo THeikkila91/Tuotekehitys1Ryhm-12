@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0;
     padding: 0;
@@ -161,8 +162,8 @@ footer {
     gap: 100px;
 }
 .logofooter-img {
-    height: 150px;       /* Keeps the logo from looking stretched */
-    display: block;     /* Makes it easier to move around */
+    height: 150px;
+    display: block;
 }
 
 .hero-section {
@@ -384,4 +385,46 @@ display: flex !important;
 
 .jasenyysosto:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-text h1, p {
+        font-size: 1.8rem;
+    }
+
+    .palvelukortit {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 4. Promo kortit pinoon */
+    .promo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .sidebyside_promo, 
+    .sidebyside_promo.reverse {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
 }
