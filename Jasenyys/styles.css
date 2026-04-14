@@ -24,8 +24,8 @@ header {
     padding: 0 40px;
     justify-content: space-between; /* Jakaa tilan tasaisesti logon ja navigaation välillä */
     padding: 0 10%; /* Lisää tilaa reunoille */
-
-    .header-buttons {
+}
+header .header-buttons {
         display: flex;
         align-items: center;
         gap: 20px; /* Lisää tilaa painikkeiden väliin */
@@ -61,8 +61,6 @@ header {
 
 .btn:hover {
   opacity: 0.8;
-}
-
 }
 
 .palvelukortit {
@@ -396,6 +394,7 @@ display: flex !important;
   opacity: 0.8;
 }
 
+/* Seuraava osio muuttamaan sivustoa kapeammille näytöille */
 @media (max-width: 768px) {
     
     header {
@@ -415,7 +414,8 @@ display: flex !important;
         font-size: 1.8rem;
     }
 
-    .palvelukortit {
+    /* 4. Palvelukortit pinoon */
+    .palvelukortit { 
         flex-direction: column;
         align-items: center;
     }
