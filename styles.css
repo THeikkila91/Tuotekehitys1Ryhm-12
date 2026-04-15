@@ -1,0 +1,310 @@
+:root {
+    --brand-cyan: #00a6c7;
+    --brand-orange: #e65127;
+    --dark-navy: #05162a;
+    --light-bg: #fcfcfc;
+    --text-gray: #444444;
+    --footer-black: #111111;
+    --main-font: 'Helvetica', Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    background-color: var(--light-bg);
+    overflow-x: hidden; /* Estää vaakasuuntaisen skrollauksen */
+}
+
+header {
+    height: 80px;
+    background-color: var(--brand-cyan);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between; /* Jakaa tilan tasaisesti logon ja navigaation välillä */
+    padding: 0 10%; /* Lisää tilaa reunoille */
+
+    .header-buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px; /* Lisää tilaa painikkeiden väliin */
+    }
+
+    .header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--brand-orange); /* Korjattu kommenttimerkki tästä */
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+}
+
+.palvelukortit {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+    background-color: #fcfcfc;
+}
+
+.Kuntokeskukset, 
+.Ryhmäliikunta, 
+.Personal-Trainer, 
+.Palautuminen {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease;
+}
+
+.Kuntokeskukset:hover, 
+.Ryhmäliikunta:hover, 
+.Personal-Trainer:hover, 
+.Palautuminen:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.kuntosali-img {
+    height: 40px;
+    width: auto;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.palvelukortit h2 {
+    margin: 10px 0;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--dark-navy);
+}
+
+.palvelukortit p {
+    margin: 0;
+    color: var(--text-gray);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+.logo {
+    margin-right: 0; /* Puskee navigaation oikealle logosta */
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+
+footer {
+    display: flex;
+    height: 400px;
+    background-color: var(--footer-black);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Footer-laatikot {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.logofooter-img {
+    height: 150px;       /* Keeps the logo from looking stretched */
+    display: block;     /* Makes it easier to move around */
+}
+
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    left: 50%;          /*Siirretään keskelle...*/
+    right: 50%;
+    margin-left: -50vw; /* ...ja vedetään takaisin vasemmalle puolet näytöstä */
+    margin-right: -50vw;
+    overflow: hidden;   /* Leikkaa yli menevät osat */
+}
+
+.hero-img {
+    width: 100%;        /* Nyt 100% tarkoittaa 100% tuosta 100vw laatikosta */
+    height: 100%;
+    object-fit: cover;  /* Pitää huolen, ettei kuva veny hassusti */
+    display: block;
+    filter: brightness(60%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 20%;           /* Laitetaan teksti pystysuunnassa keskelle */
+    left: 50%;          /* Ja vaakasuunnassa keskelle */
+    transform: translate(-50%, -50%); /* Siirtää tismalleen keskipisteeseen */
+    text-align: center;
+    color: white;       /* Valkoinen teksti erottuu paremmin */
+    width: 90%;         /* Jätetään vähän marginaalia sivuille */
+}
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* Auttaa tekstin näkymistä */
+}
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    }
+
+.Somet {
+  list-style: none;
+  padding: 0;
+}
+
+.Somet li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.mini-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.Somet a {
+  text-decoration: none;
+  color: white;
+}
+.Footer-Navigaatio ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.Footer-Navigaatio li a {
+    text-decoration: none;
+    color: white;
+}
+.Footer-Navigaatio li a:hover {
+    color: #000000;
+}
+
+.section-title {
+    text-align: left;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 25px;    /* Väli otsikon ja korttien välissä */
+    color: #05162a;
+}
+/* Tämä pakottaa laatikot riviin */
+.promo-container {
+display: flex !important;
+    gap: 30px;
+    justify-content: flex-start; /* Kortit alkavat vasemmalta (otsikon alta) */
+    padding: 0;                 /* Nollataan padding, jotta ekas kortti on tasan otsikon alla */
+    background-color: transparent;
+}
+
+/* Tämä tekee itse laatikot */
+.promo-card {
+    background-color: white !important;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 350px; /* Kiinteä leveys testaukseen */
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Näkyvä varjo */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Kuvatiedostojen säätö */
+.promo-image {
+    width: 100%;
+    height: 250px;
+    background-color: #eee; /* Näkyy harmaana jos kuva puuttuu */
+}
+
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-content {
+    padding: 20px;
+}
+.promo-container-wrapper {
+    max-width: 1100px; /* Säädä tämä samaksi kuin korttien yhteisleveys */
+    margin: 0 auto;    /* Keskittää koko paketin sivulla */
+    padding: 0 20px;   /* Estää tekstiä osumasta näytön reunaan mobiilissa */
+}
+
+
+.hieronta-img {
+    object-position: bottom; /* Keskitytään kuvan yläosaan, joka on hierontaan liittyvää */
+}
+
+.promo-section {
+    background-color: #fcfcfc;
+    padding: 20px 0 60px 0;
+    margin-top: -20px;
+}
