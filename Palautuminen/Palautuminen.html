@@ -2,6 +2,7 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palautuminen - Northwind Gym</title>
     <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="styles.css">
@@ -9,21 +10,20 @@
 <body>
 
     <header>
-        <div class="logo"></div>
-        <a href="index.html">
-            <img src="../images/logo2.png" alt="Logo" class="logo-img">
-        </a>
-     </div>
-<nav>
-    <ul>
-        <li><a href="../Etusivu/Etusivu.html">Etusivu</a></li>
-        <li><a href="../valitsekuntosali.html">Valitse kuntosali</a></li>
-        <li><a href="../Jasenyys/Jasenyys.html">Jäsenyys</a></li>
-        <li><a href="../Kuntosali/Kuntosali.html">Kuntosali</a></li>
-        <li><a href="Palautuminen.html">Palautuminen</a></li> 
-        <li><a href="../Asiakaspalvelu/Asiakaspalvelu.html">Asiakaspalvelu</a></li>
-    </ul>
-</nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo2.png" alt="Northwind Gym Logo" class="logo-img" width="150" height="70">
+            </a>
+        </div> <nav aria-label="Päävalikko">
+            <ul>
+                <li><a href="../Etusivu/index.html">Etusivu</a></li>
+                <li><a href="../valitsekuntosali/index.html">Valitse kuntosali</a></li>
+                <li><a href="../Jasenyys/Jasenyys.html">Jäsenyys</a></li>
+                <li><a href="../Kuntosali/Kuntosali.html">Kuntosali</a></li>
+                <li><a href="Palautuminen.html" aria-current="page">Palautuminen</a></li> 
+                <li><a href="../Asiakaspalvelu/Asiakaspalvelu.html">Asiakaspalvelu</a></li>
+            </ul>
+        </nav>
 
         <div class="header-actions">
             <a href="#" class="btn btn-primary">LIITY JÄSENEKSI</a>
@@ -39,7 +39,9 @@
                 
                 <div class="promo-container">
                     <div class="promo-card">
-                        <div class="recovery-card-img"><img src="../images/sauna.jpg" alt="Sauna"></div>
+                        <div class="recovery-card-img">
+                            <img src="../images/sauna.jpg" alt="Viihtyisä saunaosasto" loading="lazy" width="350" height="250">
+                        </div>
                         <div class="promo-content">
                             <h3>Sauna & Rentoutus</h3>
                             <p>Saunan lempeä lämpö on perinteinen tapa nopeuttaa palautumista ja parantaa verenkiertoa väsyneissä lihaksissa.</p>
@@ -52,7 +54,9 @@
                     </div>
 
                     <div class="promo-card">
-                        <div class="recovery-card-img"><img src="../images/meditaatio.webp" alt="Meditaatio"></div>
+                        <div class="recovery-card-img">
+                            <img src="../images/meditaatio.webp" alt="Henkilö meditoimassa rauhallisessa tilassa" loading="lazy" width="350" height="250">
+                        </div>
                         <div class="promo-content">
                             <h3>Mielen Palautuminen</h3>
                             <p>Meditaatio auttaa laskemaan kortisolitasoja ja rauhoittamaan hermostoa kovan fyysisen treenin jälkeen.</p>
@@ -65,7 +69,9 @@
                     </div>
 
                     <div class="promo-card">
-                        <div class="recovery-card-img"><img src="../images/hieronta.jpg" alt="Hieronta"></div>
+                        <div class="recovery-card-img">
+                            <img src="../images/hieronta.jpg" alt="Ammattimainen urheiluhieronta" loading="lazy" width="350" height="250">
+                        </div>
                         <div class="promo-content">
                             <h3>Ammattihieronta</h3>
                             <p>Urheiluhieronta avaa lihaskalvoja ja triggerpisteitä, ehkäisten rasitusvammoja ja parantaen liikkuvuutta.</p>
@@ -82,13 +88,13 @@
                     <div class="article-box">
                         <div class="article-content">
                             <h2>Palautuminen on voiman ja kehityksen salaisuus</h2>
-                            <p>Monesti ajatellaan, että kehitys tapahtuu kuntosalin puolella raudan noustessa. Todellisuudessa treeni on vain ärsyke – kehitys ja lihaskasvu tapahtuvat levon aikana. Kun treenaat kovaa, aiheutat lihaksiisi mikroskooppisia vaurioita ja kulutat kehosi energiavarastoja. Tämä on täysin luonnollinen osa kehitystä, mutta ilman riittävää huoltoa kehitys pysähtyy ja kääntyy laskuun.</p>
+                            <p>Monesti ajatellaan, että kehitys tapahtuu kuntosalin puolella raudan noustessa. Todellisuudessa treeni on vain ärsyke – kehitys ja lihaskasvu tapahtuvat levon aikana. Kun treenaat kovaa, aiheutat lihaksiisi mikroskooppisia vaurioita ja kulutat kehosi energiavarastoja.</p>
                             
-                            <p>Palautumisen aikana keho korjaa nämä vauriot ja valmistautuu seuraavaan koitokseen rakentamalla itsestään entistä vahvemman. Tätä ilmiötä kutsutaan superkompensaatioksi. Jos skippaat palautumisen, kehosi jää jatkuvaan stressitilaan, suorituskyky laskee ja loukkaantumisriski kasvaa merkittävästi. Northwind Gym haluaa tarjota sinulle parhaat työkalut tähän kriittiseen vaiheeseen.</p>
+                            <p>Palautumisen aikana keho korjaa nämä vauriot ja valmistautuu seuraavaan koitokseen rakentamalla itsestään entistä vahvemman. Tätä ilmiötä kutsutaan superkompensaatioksi. Jos skippaat palautumisen, kehosi jää jatkuvaan stressitilaan, suorituskyky laskee ja loukkaantumisriski kasvaa merkittävästi.</p>
 
-                            <p>Optimaalinen palautuminen koostuu useasta eri osa-alueesta. Laadukas uni on kaiken perusta, mutta aktiivinen palautuminen, kuten sauna, kevyt liikkuvuusharjoittelu ja hieronta, voivat nopeuttaa prosessia huomattavasti. Ne auttavat laskemaan hermoston vireystilaa ja parantavat lihasten verenkiertoa, jolloin ravinteet pääsevät nopeammin perille sinne, missä niitä tarvitaan.</p>
+                            <p>Optimaalinen palautuminen koostuu useasta eri osa-alueesta. Laadukas uni on kaiken perusta, mutta aktiivinen palautuminen, kuten sauna, kevyt liikkuvuusharjoittelu ja hieronta, voivat nopeuttaa prosessia huomattavasti.</p>
 
-                            <p>On tärkeää muistaa, että palautuminen ei ole vain passiivista odottelua, vaan se on taito, jota voi kehittää. Northwind Gymillä olemme luoneet ympäristön, jossa voit rauhoittua treenin jälkeen. Saunan lämpö, ammattitaitoiset hierojat ja hiljaiset tilat mielen rauhoittamiseen varmistavat, että olet valmis seuraavaan treeniin nopeammin ja tehokkaammin kuin koskaan ennen. Anna kehollesi lupa levätä – se on paras investointi, jonka voit tehdä tulostesi eteen.</p>
+                            <p>On tärkeää muistaa, että palautuminen ei ole vain passiivista odottelua, vaan se on taito, jota voi kehittää. Northwind Gymillä olemme luoneet ympäristön, jossa voit rauhoittua treenin jälkeen. Anna kehollesi lupa levätä – se on paras investointi, jonka voit tehdä tulostesi eteen.</p>
                         </div>
                     </div>
                 </div>
@@ -99,45 +105,37 @@
 
     <footer>
         <section class="Footer-laatikot">
-            <img src="../images/logo2.png" alt="Logo" class="logofooter-img">
+            <img src="../images/logo2.png" alt="Northwind Gym Footer Logo" class="logofooter-img" loading="lazy" width="150">
             <div class="aukioloajat">
-            <h2>Aukioloajat</h2>
-            <p>Joka päivä 05:00 - 24:00</p>
-            <h2>Asiakaspalvelut avoinna</h2>
-            <p>Arkisin 11:00 - 20:00</p>
+                <h2>Aukioloajat</h2>
+                <p>Joka päivä 05:00 - 24:00</p>
+                <h2>Asiakaspalvelu</h2>
+                <p>Arkisin 11:00 - 20:00</p>
             </div>
             <div class="Meista">
-            <h2>Meistä</h2>
-            <p>+35800000000</p>
-            <p>Lujajumppakatu 9, 33100 Tampere</p>
+                <h2>Meistä</h2>
+                <p>+358 00 000 000</p>
+                <p>Lujajumppakatu 9, 33100 Tampere</p>
             </div>
             <ul class="Somet">
                 <h2>Somet</h2>
-                <li>
-                    <img src="../images/yt.png" alt="Youtube" class="mini-icon">
-                    Youtube</li>
-                <li>
-                    <img src="../images/ig.PNG" alt="Instagram" class="mini-icon">
-                    Instagram</li>
-                <li>
-                    <img src="../images/fb.PNG" alt="Facebook" class="mini-icon">
-                    Facebook</li>
+                <li><img src="../images/yt.png" alt="Youtube" class="mini-icon" loading="lazy" width="20" height="20"> Youtube</li>
+                <li><img src="../images/ig.PNG" alt="Instagram" class="mini-icon" loading="lazy" width="20" height="20"> Instagram</li>
+                <li><img src="../images/fb.PNG" alt="Facebook" class="mini-icon" loading="lazy" width="20" height="20"> Facebook</li>
             </ul>
-<div class="Footer-Navigaatio">
-    <h2>Navigaatio</h2>
-    <ul>
-        <li><a href="../Etusivu/Etusivu.html">Etusivu</a></li>
-        <li><a href="../ValitseKuntosali/ValitseKuntosali.html">Valitse kuntosali</a></li>
-        <li><a href="../Jasenyys/Jasenyys.html">Jäsenyys</a></li>
-        <li><a href="../Kuntosali/Kuntosali.html">Kuntosali</a></li>
-
-        <li><a href="Palautuminen.html">Palautuminen</a></li>
-        
-        <li><a href="../Asiakaspalvelu/Asiakaspalvelu.html">Asiakaspalvelu</a></li>
-    </ul>
-</div>
+            <nav class="Footer-Navigaatio" aria-label="Alatunnisteen navigointi">
+                <h2>Navigaatio</h2>
+                <ul>
+                    <li><a href="../Etusivu/Etusivu.html">Etusivu</a></li>
+                    <li><a href="../ValitseKuntosali/ValitseKuntosali.html">Valitse kuntosali</a></li>
+                    <li><a href="../Jasenyys/Jasenyys.html">Jäsenyys</a></li>
+                    <li><a href="../Kuntosali/Kuntosali.html">Kuntosali</a></li>
+                    <li><a href="Palautuminen.html">Palautuminen</a></li>
+                    <li><a href="../Asiakaspalvelu/Asiakaspalvelu.html">Asiakaspalvelu</a></li>
+                </ul>
+            </nav>
         </section>
     </footer>
-
+    
 </body>
 </html>
