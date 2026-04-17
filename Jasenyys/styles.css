@@ -155,7 +155,7 @@ nav a:hover {
 footer {
     display: flex;
     height: 400px;
-    background-color: #111111;
+    background-color: #00a6c7;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -394,14 +394,38 @@ display: flex !important;
   opacity: 0.8;
 }
 
-/* Seuraava osio muuttamaan sivustoa kapeammille näytöille */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     
     header {
         height: auto;
         flex-direction: column;
         padding: 20px;
         gap: 15px;
+    }
+    footer {
+        height: auto;
+        min-height: 300px;
+        flex-direction: column;
+        padding: 60px 20px;
+        width: 100%;
+    }
+
+    .Footer-laatikot {
+        flex-direction: column;
+        gap: 40px; 
+        align-items: center;
+        text-align: center; 
+        font-size: 13px;
+        width: 100%;
+        .logofooter-img {
+        margin: 0 auto 20px;
+    }
+}
+
+    .Somet li, .Footer-Navigaatio {
+        text-align: center;
+        justify-content: center;
+        font-size: 18px;
     }
 
     nav ul {
@@ -414,13 +438,11 @@ display: flex !important;
         font-size: 1.8rem;
     }
 
-    /* 4. Palvelukortit pinoon */
     .palvelukortit { 
         flex-direction: column;
         align-items: center;
     }
 
-    /* 4. Promo kortit pinoon */
     .promo-container {
         flex-direction: column;
         align-items: center;
