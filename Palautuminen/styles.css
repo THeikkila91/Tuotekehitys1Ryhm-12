@@ -284,12 +284,12 @@ nav a:hover, nav a.active {
     color: #555;
 }
 
-/* --- FOOTER & SOMEKUVIEN OSUUDET --- */
 footer {
     display: flex;
     height: 400px;
     background-color: #111111;
     color: #ffffff;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -300,42 +300,42 @@ footer {
     justify-content: center;
     gap: 100px;
 }
-
 .logofooter-img {
     height: 150px;
     display: block;
 }
 
 .Somet {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .Somet li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
 .mini-icon {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .Somet a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
-
 .Footer-Navigaatio ul {
     list-style-type: none; 
     padding: 0;
     margin: 0;
 }
-
 .Footer-Navigaatio li a {
     text-decoration: none;
     color: white;
+}
+.Footer-Navigaatio li a:hover {
+    color: #000000;
 }
