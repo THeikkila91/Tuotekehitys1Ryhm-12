@@ -41,10 +41,8 @@ header {
     display: block;
 }
 
-nav {
-    flex: 1; /* Ottaa tilan haltuun keskellä */
-    display: flex;
-    justify-content: center;
+nav li {
+    margin-right: 30px;
 }
 
 nav ul {
@@ -52,17 +50,15 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 30px; /* Tasainen väli linkkien välillä */
 }
 
 nav a {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     transition: color 0.3s;
-    white-space: nowrap;
 }
 
 nav a:hover {
